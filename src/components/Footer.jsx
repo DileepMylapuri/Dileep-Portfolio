@@ -79,7 +79,7 @@ const Footer = () => {
 
           {/* Social Links */}
          {/*  <span className="inline-flex sm:ml-auto justify-center sm:justify-start gap-6">
-            <a href="https://github.com/DileepMylapuri" target="_blank" className="text-gray-500 hover:text-black">
+            <a href="https://github.com/DileepLee" target="_blank" className="text-gray-500 hover:text-black">
               <svg fill="currentColor" className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
                 <path d="M165.9 397.4c0 2-2.3 ..."></path>
               </svg>
