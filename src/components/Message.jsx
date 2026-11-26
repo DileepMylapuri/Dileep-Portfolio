@@ -34,7 +34,7 @@ const [successMessage, setSuccessMessage ] = useState('');
 
   return (
     <section className="bg-BgColor border border-CardBorderColor w-full min-h-full body-font rounded-lg shadow-xl flex flex-col">
-      <div className="px-6 py-8 md:px-10 md:py-10 mx-auto flex flex-col md:flex-row justify-center items-center gap-8 flex-1">
+      <div className="px-6 py-8 md:px-10 md:py-4 mx-auto flex flex-col md:flex-row justify-center items-center gap-8 flex-1">
         <div className="w-full md:w-1/2 text-center md:text-left">
           <h1 style={{ fontFamily: 'monotype corsiva' }} className="title-font font-bold text-2xl md:text-3xl head-HeadColor">
             A Warm Welcome to My Portfolio Website!
@@ -47,7 +47,7 @@ const [successMessage, setSuccessMessage ] = useState('');
           </span>
         </div>
 
-        <form onSubmit={handleSubmit} className="w-full md:w-1/2 shadow-2xl rounded-lg p-6 md:p-10 mt-5 flex flex-col">
+        <form onSubmit={handleSubmit} className="w-full md:w-1/2 shadow-2xl rounded-lg p-6 md:px-8 md:py-4 mt-5 md:mt-0 flex flex-col">
           <h2 className="head-FocusColor text-base md:text-lg font-bold mb-4 text-center md:text-left">
             Connect with me, will make you better vision!
           </h2>
@@ -61,7 +61,7 @@ const [successMessage, setSuccessMessage ] = useState('');
               name="fullName" 
               value={formData.fullName} 
               onChange={handleChange}
-              className="w-full bg-BgColor rounded border border-CardBorderColor focus:head-HeadColor text-sm md:text-base outline-none head-HeadColor py-2 px-3 leading-8" 
+              className="w-full bg-BgColor rounded border border-CardBorderColor focus:head-HeadColor text-sm md:text-base outline-none head-HeadColor py-2 md:py-1 px-3 leading-8"
             />
           </div>
 
@@ -74,7 +74,7 @@ const [successMessage, setSuccessMessage ] = useState('');
               name="email" 
               value={formData.email} 
               onChange={handleChange}
-              className="w-full bg-BgColor rounded border border-CardBorderColor focus:border-orange-500 focus:ring-2 focus:head-HeadColor text-sm md:text-base outline-none head-HeadColor py-2 px-3 leading-8" 
+              className="w-full bg-BgColor rounded border border-CardBorderColor focus:border-orange-500 focus:ring-2 focus:head-HeadColor text-sm md:text-base outline-none head-HeadColor py-2 md:py-1 px-3 leading-8"
             />
           </div>
 
@@ -86,7 +86,7 @@ const [successMessage, setSuccessMessage ] = useState('');
               name="msg" 
               value={formData.msg} 
               onChange={handleChange}
-              className="w-full bg-BgColor rounded border border-CardBorderColor focus:head-HeadColor text-sm md:text-base outline-none head-HeadColor py-2 px-3 leading-6 min-h-[100px]" 
+              className="w-full bg-BgColor rounded border border-CardBorderColor focus:head-HeadColor text-sm md:text-base outline-none head-HeadColor py-2 px-3 leading-6 min-h-[100px] md:min-h-[72px]"
             />
           </div>
 

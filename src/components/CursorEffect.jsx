@@ -39,12 +39,25 @@ const CursorEffect = ({ containerRef }) => {
         }
       });
       
-      requestAnimationFrame(animate);
+      frameId = requestAnimationFrame(animate);
     };
 
-    animate();
+    // Run the trail only while the section is on screen, so it does not
+    // slow down the rest of the page.
+    let frameId = null;
+    const stop = () => {
+      cancelAnimationFrame(frameId);
+      frameId = null;
+    };
+    const observer = new IntersectionObserver(([entry]) => {
+      if (!entry.isIntersecting) stop();
+      else if (frameId === null) animate();
+    });
+    observer.observe(containerEl);
 
     return () => {
+      observer.disconnect();
+      stop();
       containerEl.removeEventListener('mousemove', handleMouseMove);
     };
   }, [containerRef]);
