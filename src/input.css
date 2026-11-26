@@ -1,0 +1,103 @@
+.text-border {
+    text-shadow: 
+    -1px -1px 0 var(--color-TextBorder),  
+    1px -1px 0 var(--color-TextBorder),  
+    -1px 1px 0 var(--color-TextBorder),  
+    1px 1px 0 var(--color-TextBorder);
+}
+
+:root.dark{
+    --color-BgColor : rgb(17, 17, 16);
+    --color-BgCardColor : rgb(14, 14, 14);
+    --color-HeadColor : #9d5bff;
+    --color-FocusColor : #9d5bff;
+    --color-TextColor : rgb(255, 255, 255);
+    --color-CardColor: #9d5bff;
+    --color-CardText: rgb(255, 255, 255);
+    --color-HoverColor: rgb(19, 16, 16);
+    --color-CardBorderColor: #9d5bff;
+    --color-TextBorder: #9d5bff; 
+    --gradient-from: #41ab96;
+    --gradient-via: #9d5bff; 
+    --gradient-to: #69a58f;  
+}
+:root{
+    --color-BgColor: rgb(229, 238, 238);
+    --color-BgCardColor : rgb(231, 231, 231);
+    --color-HeadColor : rgb(209, 107, 34);
+    --color-FocusColor : rgb(172, 4, 4);
+    --color-TextColor : black;
+    --color-CardColor: rgb(209, 107, 34);
+    --color-CardText: rgb(16, 15, 15);
+    --color-HoverColor: rgb(205, 195, 195);
+    --color-CardBorderColor: rgb(209, 107, 34);
+    --color-TextBorder: rgba(255, 255, 255, 0.148);
+    --color-CardText: rgb(255, 255, 255);
+    --gradient-from: #f91647;
+    --gradient-via: #fa15f2; 
+    --gradient-to: #f6b65c;  
+}
+
+.text-TextColor {
+  color: var(--color-TextColor) !important;
+}
+.head-HeadColor {
+  color: var(--color-HeadColor) !important;
+}
+.head-FocusColor {
+  color: var(--color-FocusColor) !important;
+}
+
+.bg-BgColor {
+  background-color: var(--color-BgColor) !important;
+}
+.bg-BgCardColor {
+  background-color: var(--color-BgCardColor) !important;
+}
+
+/* Add others as needed: */
+.bg-CardColor {
+  background-color: var(--color-CardColor) !important;
+}
+
+.card-CardText {
+  color: var(--color-CardText) !important;
+}
+
+.card-CardText {
+  color: var(--color-CardText) !important;
+}
+
+.border-CardBorderColor {
+  border-color: var(--color-CardBorderColor);
+}
+
+.hover\:text-HeadColor:hover {
+  color: var(--color-HeadColor);
+}
+.hover\:card-CardColor:hover {
+  color: var(--color-CardColor);
+}
+.hover\:head-FocusColor:hover {
+  color: var(--color-FocusColor);
+}
+.hover\:border-CardBorderColor:hover {
+  color: var(--color-CardBorderColor);
+}
+
+.text-border {
+  text-shadow:
+    -1px -1px 0 var(--color-TextBorder),
+    1px -1px 0 var(--color-TextBorder),
+    -1px 1px 0 var(--color-TextBorder),
+    1px 1px 0 var(--color-TextBorder);
+}
+
+.card-BgColor {
+  background-image: linear-gradient(
+    to right,
+    var(--gradient-from),
+    var(--gradient-via),
+    var(--gradient-to)
+  );
+}

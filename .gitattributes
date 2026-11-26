@@ -1,0 +1,6 @@
+# Keep these files byte-for-byte
+*.pdf binary
+*.png binary
+*.jpg binary
+*.webp binary
+*.mp4 binary

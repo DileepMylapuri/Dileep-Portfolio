@@ -1,0 +1,63 @@
+.marquee-row {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 4rem;
+}
+
+.marquee-row:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+.marquee-left .marquee-content {
+  animation: marquee-left 15s linear infinite;
+}
+
+.marquee-right .marquee-content {
+  animation: marquee-right 15s linear infinite;
+}
+
+.marquee-item {
+  flex-shrink: 0;
+}
+
+@keyframes marquee-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes marquee-right {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes marquee-down {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(0%);}
+}
+@keyframes marquee-up {
+ 0% { transform: translateY(0%)}
+  100% { transform: translateY(-100%)}
+}
+
+.text-stroke {
+  color: transparent;
+  -webkit-text-stroke: 2px #f3f7f3;
+  /* text-stroke: 2px #f59e0b; */
+}
+/* A thinner outline keeps the smaller text readable on phones. */
+@media (max-width: 767px) {
+  .text-stroke {
+    -webkit-text-stroke-width: 1px;
+  }
+}
+.text-effect:hover{
+  color: #e1ff00;
+}
+/* .text-border {
+  text-shadow: 2px 2px 8px #d47f07; 
+} */

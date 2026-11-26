@@ -1,0 +1,65 @@
+@import "tailwindcss";
+/* index.css */
+
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Hide the page scrollbar. Scrolling still works. */
+html, body, #root {
+  scrollbar-width: none;
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+#root::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes wave {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.hover\:animate-wave:hover {
+    animation: wave 1s ease-in-out infinite;
+}
+
+
+
+:root {
+  --color-BgColor: white;
+  --color-TextColor: black;
+  --color-CardColor: rgb(236, 226, 226);
+  --color-CardText: rgb(16, 15, 15);
+  --color-CardBorderColor: rgb(203, 19, 19);
+  --color-TextBorder: rgba(255, 255, 255, 0.148);
+}
+
+:root.dark {
+  --color-BgColor: rgb(15, 15, 16);
+  --color-TextColor: white;
+  --color-CardColor: rgb(28, 26, 26);
+  --color-CardText: rgb(140, 126, 126);
+  --color-CardBorderColor: rgb(40, 59, 205);
+  --color-TextBorder: rgba(255, 0, 0, 0.071);
+}
+
+/* text-border class using text-shadow referencing --color-TextBorder */
+.text-border {
+  text-shadow:
+    -1px -1px 0 var(--color-TextBorder),
+    1px -1px 0 var(--color-TextBorder),
+    -1px 1px 0 var(--color-TextBorder),
+    1px 1px 0 var(--color-TextBorder);
+}
