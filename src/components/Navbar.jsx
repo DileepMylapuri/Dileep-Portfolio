@@ -46,8 +46,10 @@ const Navbar = ({ onGetInTouchClick }) => {
         </a>
 
         <button
-          className={`lg:hidden focus:outline-none ${isAtTop ? "text-white" : "text-TextColor"}`}
+          className={`-mr-2 p-2 lg:hidden ${isAtTop ? "text-white" : "text-TextColor"}`}
           onClick={() => setMenuOpen(!menuOpen)}
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={menuOpen}
         >
           {menuOpen ? (
             <svg
@@ -71,7 +73,7 @@ const Navbar = ({ onGetInTouchClick }) => {
         </button>
 
         <nav
-          className={`flex-col lg:flex-row lg:flex bg-violet-950 gap-6 lg:gap-8 items-center absolute lg:static top-16 left-0 w-full lg:w-auto lg:bg-transparent transition-all duration-300 ease-in-out ${
+          className={`flex-col lg:flex-row lg:flex bg-violet-950 gap-1 lg:gap-8 items-center absolute lg:static top-16 left-0 w-full lg:w-auto lg:bg-transparent max-h-[calc(100dvh-4rem)] overflow-y-auto overscroll-contain py-2 lg:max-h-none lg:overflow-visible lg:py-0 transition-all duration-300 ease-in-out ${
             menuOpen ? "flex" : "hidden"
           }`}
         >
@@ -80,7 +82,7 @@ const Navbar = ({ onGetInTouchClick }) => {
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
-                className=" hover:head-FocusColor group-hover:scale-x-100 hover:bg-gray-900 head-HeadColor font-bold py-2 lg:py-0 text-lg cursor-pointer"
+                className=" hover:head-FocusColor group-hover:scale-x-100 hover:bg-gray-900 head-HeadColor font-bold w-full shrink-0 py-2.5 lg:w-auto lg:py-0 text-lg cursor-pointer"
               >
                 {item.charAt(0).toUpperCase() + item.slice(1)}
               </button>

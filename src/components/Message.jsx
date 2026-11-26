@@ -61,7 +61,7 @@ const [successMessage, setSuccessMessage ] = useState('');
               name="fullName" 
               value={formData.fullName} 
               onChange={handleChange}
-              className="w-full bg-BgColor rounded border border-CardBorderColor focus:head-HeadColor text-sm md:text-base outline-none head-HeadColor py-2 md:py-1 px-3 leading-8"
+              className="w-full bg-BgColor rounded border border-CardBorderColor focus:head-HeadColor text-base outline-none head-HeadColor py-2 md:py-1 px-3 leading-8"
             />
           </div>
 
@@ -74,7 +74,7 @@ const [successMessage, setSuccessMessage ] = useState('');
               name="email" 
               value={formData.email} 
               onChange={handleChange}
-              className="w-full bg-BgColor rounded border border-CardBorderColor focus:border-orange-500 focus:ring-2 focus:head-HeadColor text-sm md:text-base outline-none head-HeadColor py-2 md:py-1 px-3 leading-8"
+              className="w-full bg-BgColor rounded border border-CardBorderColor focus:border-orange-500 focus:ring-2 focus:head-HeadColor text-base outline-none head-HeadColor py-2 md:py-1 px-3 leading-8"
             />
           </div>
 
@@ -86,7 +86,7 @@ const [successMessage, setSuccessMessage ] = useState('');
               name="msg" 
               value={formData.msg} 
               onChange={handleChange}
-              className="w-full bg-BgColor rounded border border-CardBorderColor focus:head-HeadColor text-sm md:text-base outline-none head-HeadColor py-2 px-3 leading-6 min-h-[100px] md:min-h-[72px]"
+              className="w-full bg-BgColor rounded border border-CardBorderColor focus:head-HeadColor text-base outline-none head-HeadColor py-2 px-3 leading-6 min-h-[100px] md:min-h-[72px]"
             />
           </div>
 

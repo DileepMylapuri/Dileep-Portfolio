@@ -208,7 +208,7 @@ const App = () => {
                     <div className="relative mt-0 sm:mt-5 rounded-lg shadow-2xl w-full max-w-[95%] sm:max-w-[600px] md:max-w-[750px] lg:max-w-[900px] h-auto max-h-[90vh] sm:h-[500px] flex flex-col overflow-hidden">
                       <button
                         onClick={handleClose}
-                        className="absolute top-2 sm:top-3 right-2 sm:right-3 text-red-600 hover:text-red-800 z-10 bg-white/10 hover:bg-white/20 rounded-full w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center transition-all cursor-pointer"
+                        className="absolute top-2 sm:top-3 right-2 sm:right-3 text-red-600 hover:text-red-800 z-10 bg-white/10 hover:bg-white/20 rounded-full w-10 h-10 flex items-center justify-center transition-all cursor-pointer"
                         aria-label="Close SignUp"
                       >
                         <X className="w-5 h-5 sm:w-6 sm:h-6" strokeWidth={3} aria-hidden="true" />

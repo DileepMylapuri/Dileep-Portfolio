@@ -7,7 +7,7 @@ const CursorEffect = ({ containerRef }) => {
   const mouse = useRef({ x: 0, y: 0 });
 
   useEffect(() => {
-    if (!containerRef?.current) return;
+    if (!containerRef?.current || !window.matchMedia('(pointer: fine)').matches) return;
 
     cursorRefs.current = cursorRefs.current.slice(0, trailCount);
     positions.current = new Array(trailCount).fill({ x: 0, y: 0 });
@@ -68,7 +68,7 @@ const CursorEffect = ({ containerRef }) => {
        <div
           key={index}
           ref={(el) => (cursorRefs.current[index] = { current: el })}
-          className="absolute top-0 left-0 h-[20px] w-[20px] pointer-events-none z-[5]"
+          className="hidden [@media(pointer:fine)]:block absolute top-0 left-0 h-[20px] w-[20px] pointer-events-none z-[5]"
           style={{
             backgroundColor: "var(--color-CardBorderColor)",
             opacity: 1 - index / trailCount,

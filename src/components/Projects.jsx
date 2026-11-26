@@ -45,7 +45,7 @@ const Projects = () => {
                   href={project.liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-400 hover:text-blue-600"
+                  className="-mr-2 shrink-0 p-2 text-blue-400 hover:text-blue-600"
                 >
                   <ExternalLink size={20} />
                 </a>

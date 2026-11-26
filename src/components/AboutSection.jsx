@@ -51,7 +51,7 @@ export default function AboutSection() {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 gap-6 min-[480px]:grid-cols-2">
               <div>
                 <h4 className="head-HeadColor font-semibold mb-2">Education</h4>
                 <p className="text-TextColor font-bold text-sm">MBA (Travel and Tourism Administration Management)</p>
@@ -78,13 +78,13 @@ export default function AboutSection() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-2 gap-3 sm:gap-6">
             {stats.map((stat, index) => (
               <div
                 key={index}
                 className="hover:animate-wave relative group rounded-xl p-[2px] transition-transform duration-300 hover:scale-105 hover:-translate-y-2">
                 {/* Inner container */}
-                <div className="rounded-xl shadow-xl shadow-zinc-900 hover:card-BgColor border-2 border-CardBorderColor text-TextColor p-6 text-center transition-colors duration-300">
+                <div className="rounded-xl shadow-xl shadow-zinc-900 hover:card-BgColor border-2 border-CardBorderColor text-TextColor h-full px-2 py-5 sm:p-6 text-center transition-colors duration-300">
                     <stat.icon className="mx-auto mb-4 text-TextColor group-hover:animate-pulse" size={32} />
                     <div className="text-2xl font-bold text-TextColor mb-2">{stat.value}</div>
                     <div className="text-TextColor text-sm">{stat.label}</div>

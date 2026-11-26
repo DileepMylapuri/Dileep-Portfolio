@@ -9,27 +9,26 @@ const   HomeSection = () => {
   return (
     <div id='home'
       ref={homeRef}
-      className=" relative h-screen overflow-hidden"
+      className="relative flex min-h-[100svh] flex-col overflow-hidden lg:bg-fixed"
       style={{
         backgroundImage: `url(${ImageData.DileepSoftDev})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'fixed',
         color: 'var(--color-TextColor)',
         backgroundColor: 'var(--color-BgColor)',
       }}>
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-70 z-10"></div>
 
-      <div className="relative z-20 h-full">
+      <div className="relative z-20 flex flex-1 flex-col">
         <CursorEffect containerRef={homeRef} />
 
-        <main className="h-full flex flex-col justify-end p-6 pb-20 sm:pb-6 sm:pr-48 md:p-10 md:pr-52">
-          <h1 className='text-3xl text-gray-300 font-bold'>Hi, I'm</h1>
+        <main className="flex flex-1 flex-col justify-end p-6 pt-24 pb-20 sm:pb-6 sm:pr-48 md:p-10 md:pt-24 md:pr-52">
+          <h1 className='text-3xl text-gray-300 font-bold [@media(max-height:500px)]:text-xl'>Hi, I'm</h1>
           <div className="flex flex-row items-center justify-between">
             <h1
               style={{ fontFamily: 'fantasy' }}
-              className="head-HeadColor text-5xl sm:text-7xl md:text-8xl font-stretch-semi-condensed leading-tight">
+              className="head-HeadColor text-5xl sm:text-7xl md:text-8xl font-stretch-semi-condensed leading-tight [@media(max-height:500px)]:!text-4xl">
               Mylapuri Dileep
             </h1>
           </div>
