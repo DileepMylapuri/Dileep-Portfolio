@@ -127,7 +127,7 @@ export const projectsData = [
   ],
   technologies: ["React.js", "Tailwind CSS", "JavaScript", "React Context"],
   githubUrl: "https://github.com/dileepmylapuri/spotify-clone",
-  liveUrl: "https://leespotifybot.netlify.app/",
+  liveUrl: "https://leespotifyboat.netlify.app/",
   featured: false,
   createdAt: new Date("2024-05-01")
 },

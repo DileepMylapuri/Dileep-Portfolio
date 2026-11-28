@@ -22,7 +22,7 @@ const Passion = () => {
             <p className='head-FocusColor'>– More Recent Projects</p>
 
             <ul className="mt-4 list-disc pl-5 text-sm text-TextColor space-y-5">
-              <li className='hover:text-blue-700 hover:font-semibold'><a target='_blank' href="http://leespotifybot.netlify.app">Spotify-style Music Player (React + Tailwind)</a></li>
+              <li className='hover:text-blue-700 hover:font-semibold'><a target='_blank' href="https://leespotifyboat.netlify.app/">Spotify-style Music Player (React + Tailwind)</a></li>
               <li className='hover:text-blue-700 hover:font-semibold'><a target='_blank' href="http://leefurniturekart.netlify.app">Furniture Kart E-Commerce Application</a></li>
               <li className='hover:text-blue-700 hover:font-semibold'><a target='_blank' href="http://msyoutubelee.netlify.app">YouTube Clone with Video Search & Routing</a></li>
               <li className='hover:text-blue-700 hover:font-semibold'><a target='_blank' href="http://msdileepwhatapp.netlify.app">Whatsapp Clone with ChatBar & Navigation the Components</a></li>
